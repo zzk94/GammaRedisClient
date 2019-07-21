@@ -5,6 +5,5 @@ public class main {
         RedisClient client = new RedisClient();
         String val = client.getKey("haha");
         System.out.println(val);
-
     }
 }

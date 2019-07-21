@@ -1,6 +1,5 @@
 package com.gamma.redis.client;
 
-
 import static com.gamma.redis.client.RedisUtil.MSG_MAX_LENGTH;
 
 public class RedisRequest {

@@ -22,6 +22,13 @@ public class RedisUtil {
         return sb.toString();
     }
 
+    /**
+     * TODO:
+     * build RedisResponse based on response messages. Currently Redis server will only return string array.
+     * This function is to transform it to RedisResponse object.
+     * @param respMsg
+     * @return
+     */
     static public RedisResponse buildResponse(final String[] respMsg) {
 
         return new RedisResponse();

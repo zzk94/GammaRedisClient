@@ -1,6 +1,5 @@
 package com.gamma.redis.client;
 
-
 public class RedisResponse {
 
     private ResponseData data;
@@ -13,7 +12,12 @@ public class RedisResponse {
         data = new ResponseData(true, "yeah");
     }
 
-    private ResponseData translateToDataObject(String[] lines) {
+    /**
+     * transform from string array to data object.
+     * @param lines
+     * @return
+     */
+    private ResponseData transformToDataObject(String[] lines) {
         String firstLine = lines[0];
 
         return new ResponseData(false, null);
